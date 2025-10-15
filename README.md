@@ -6,14 +6,6 @@ A deep learning project that uses a Convolutional Autoencoder (CAE) to detect an
 
 ---
 
-## 🚀 Live Demo
-
-An interactive demo of this project is hosted on Hugging Face Spaces. You can upload your own audio files or use the provided examples to see the model in action.
-
-**[>> Click here to access the live demo <<](https://huggingface.co/spaces/wasaeee/predicting-maintainence-using-anomalous-machine-sound-detection)**
-
-*(Note: Please replace the link above with the actual URL to your Hugging Face Space.)*
-
 ## 📝 Project Overview
 
 This project addresses the problem of predictive maintenance by analyzing the sounds produced by industrial machinery (specifically, a fan). The core idea is to build a model that understands what a "normal" or "healthy" machine sounds like. When the model encounters a sound that deviates from this learned norm, it flags it as an anomaly, potentially indicating a fault or impending failure.
@@ -43,33 +35,3 @@ This repository contains the key artifacts of the project:
 - **`model.py`**: Contains the `ConvAutoencoder` class definition.
 - **`requirements.txt`**: A list of Python libraries required to run the project.
 - **`normal.wav` / `abnormal.wav`**: Example audio files used for the live demo.
-
-## ⚙️ How to Run Locally
-
-To explore the code or run the application on your own machine:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-    cd YOUR_REPOSITORY_NAME
-    ```
-
-2.  **Set up a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-3.  **Install the dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Explore the notebook:**
-    Launch Jupyter and open `notebook.ipynb` to see the model training and evaluation process.
-
-5.  **Run the Gradio app:**
-    ```bash
-    python app.py
-    ```
-    The application will be available at a local URL (e.g., `http://127.0.0.1:7860`).
